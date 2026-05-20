@@ -26,7 +26,7 @@ export function NavBar() {
     <nav className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#050505]/90 backdrop-blur-md border-b border-white/10 py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="font-serif text-2xl font-medium tracking-widest text-white">
-          KT
+          Kanchan Todi
         </Link>
         <div className="hidden md:flex items-center gap-8">
           {links.map(link => (

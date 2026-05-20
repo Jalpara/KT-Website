@@ -12,7 +12,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center px-6 md:px-12 lg:px-24">
+    <section className="relative min-h-[90vh] flex flex-col justify-center px-6 md:px-12 lg:px-24 pt-32">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Typographic Hero */}
         <motion.div 
@@ -63,7 +63,7 @@ export function HeroSection() {
             {/* We'll use a placeholder structure here with a sophisticated gradient. The user can override the img src. */}
             <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-80 z-10" />
             <img 
-              src="/kt-portrait.jpg" 
+              src="/kt-portrait.png" 
               alt="Kanchan Todi Portrait"
               className="object-cover w-full h-full opacity-60 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
               onError={(e) => {

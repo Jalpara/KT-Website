@@ -12,9 +12,9 @@ const pages = Array.from({ length: TOTAL_PAGES }, (_, i) => `/book/page-${i + 1}
 // react-pageflip requires elements to be forwarded with Ref.
 const Page = React.forwardRef<HTMLDivElement, { imageUrl: string, pageNum: number }>((props, ref) => {
     return (
-        <div className="bg-[#1a1a1a] shadow-2xl relative border border-white/5 overflow-hidden" ref={ref}>
+        <div className="bg-[#f5f4f2] shadow-2xl relative overflow-hidden" ref={ref}>
             {/* We'll use standard img tags for the flipbook to ensure compatibility with react-pageflip calculations */}
-            <div className="w-full h-full p-4 md:p-8 flex flex-col justify-between">
+            <div className="w-full h-full p-4 md:p-1 flex flex-col justify-between">
                 <img 
                   src={props.imageUrl} 
                   alt={`Book Page ${props.pageNum}`} 
@@ -46,14 +46,14 @@ export function BookFlipbook() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="w-full max-w-[1000px] aspect-[4/3] drop-shadow-2xl">
+      <div className="w-full max-w-[1200px] aspect-[4/3] drop-shadow-2xl">
         <FlipBook
           width={450}
           height={600}
           size="stretch"
           minWidth={315}
-          maxWidth={1000}
-          minHeight={400}
+          maxWidth={1200}
+          minHeight={600}
           maxHeight={1533}
           maxShadowOpacity={0.5}
           showCover={true}
