@@ -25,7 +25,14 @@ export function HighlightSection() {
             </p>
 
             <div className="w-16 h-16 rounded-full border border-white/20 bg-white/5 flex items-center justify-center backdrop-blur-md">
-                <span className="text-white/60 font-serif italic text-2xl">KT</span>
+                <img 
+              src="/coin-logo.png" 
+              alt="Kanchan Todi Logo"
+               className="object-cover w-full h-full"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
             </div>
         </div>
 
@@ -33,7 +40,7 @@ export function HighlightSection() {
             <img 
                src="/swami-narayan-painting.jpg" 
                alt="Swami Narayan Temple Painting"
-               className="w-full h-full object-cover opacity-80 hover:opacity-100 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
+               className="w-full h-full object-cover"
                onError={(e) => {
                  e.currentTarget.style.display = 'none';
                }}

@@ -53,7 +53,6 @@ export default function Home() {
 
       <footer className="py-12 border-t border-white/5 mt-32 text-center text-white/40 font-sans text-sm">
         <p>&copy; {new Date().getFullYear()} Kanchan Todi. All rights reserved.</p>
-        <p className="mt-2 text-white/30 text-xs">Website designed for contemporary abstract expressionism.</p>
       </footer>
     </main>
   );

@@ -17,7 +17,7 @@ export function AboutSection() {
             </p>
             <div className="pt-6">
               <a 
-                href="https://www.youtube.com/results?search_query=Kanchan+Todi+TEDx+Healing+Through+Art" 
+                href="https://www.youtube.com/watch?v=Wa6EZRw9x1Q&t=5s" 
                 target="_blank" 
                 rel="noreferrer"
                 className="inline-flex items-center gap-3 border border-white/20 rounded-full px-6 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
@@ -28,17 +28,9 @@ export function AboutSection() {
           </div>
         </div>
         
-        <div className="relative aspect-square md:aspect-[3/4] border border-white/10 rounded-2xl overflow-hidden bg-[#0a0a0a]">
-           <div className="absolute inset-0 bg-gradient-to-tr from-[#1a1a1a] to-[#0a0a0a]" />
-           {/* Abstract artistic representation / fallback */}
-           <div className="absolute inset-0 opacity-20 blur-xl">
-             <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-brand rounded-full mix-blend-screen" />
-             <div className="absolute top-1/2 right-1/4 w-1/2 h-1/2 bg-blue-500 rounded-full mix-blend-screen" />
-           </div>
+        <div className="relative aspect-square md:aspect-[3/2] border border-white/10 rounded-2xl overflow-hidden bg-[#0a0a0a]">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Wa6EZRw9x1Q?si=kFcw6C773vYLFk8L&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
            
-           <div className="absolute inset-0 flex items-center justify-center p-8 text-center text-white/40 italic font-serif text-2xl">
-              &quot;Healing Through Art&quot;
-           </div>
         </div>
       </div>
     </section>
